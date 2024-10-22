@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1001.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "got": "^11.8.2",
+    "mongoose": "^8.7.2",
+    "socket.io": "^4.3.2",
+    "webtorrent": "^1.9.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
