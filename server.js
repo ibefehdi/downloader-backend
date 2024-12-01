@@ -18,20 +18,17 @@ app.use((req, res, next) => {
   console.log('Content-Type:', req.headers['content-type']);
   next();
 });
-const corsOptions = {
-  origin: '*', // Your React app URL
-  methods: ['GET', 'POST'],
-  credentials: true
-};
+
 
 // Apply CORS to Express
-app.use(cors(corsOptions));
+app.use(cors());
 
 const io = socketIO(server, {
   cors: {
-    origin: 'http://localhost:3001',
+    origin: '*',
     methods: ['GET', 'POST'],
-    credentials: true
+    credentials: true,
+    allowedHeaders: ['*']
   }
 });
 // Configure AWS
